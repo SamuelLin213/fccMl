@@ -57,9 +57,9 @@ print('Test accuracy:', test_acc) # note how the accuracy of the test data is lo
 predictions = model.predict(test_images) # make prediction by passing in array of data to .predict(), returns array of predictions
 # print(predictions[0]) # prints list containing predictions for first image
 # print(np.argmax(predictions[0])) # returns highest value in predictions of first image
-print(class_names[np.argmax(predictions[1])]) # passes in index of highest prediction into class_names array
+print(class_names[np.argmax(predictions[2])]) # passes in index of highest prediction into class_names array
 plt.figure()    
-plt.imshow(test_images[1]) # checking the nth test image
+plt.imshow(test_images[2]) # checking the nth test image
 plt.colorbar()
 plt.grid(False)
 plt.show()
