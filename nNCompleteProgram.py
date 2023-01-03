@@ -12,7 +12,7 @@ fashion_mnist = keras.datasets.fashion_mnist  # load dataset
 
 # here, we create an array of label names to match label to clothing
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
-               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
+               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot'] 
 
 # before creating our model, we preprocess the data: apply some prior transformations to data before feeding to model
 # in this case, we'll scale all greyscale pixel values(0-255) to be between 0 and 1; divide each value in set by 255.0; smaller values will make it easier to process our values
